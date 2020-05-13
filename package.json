@@ -1,0 +1,23 @@
+{
+  "name": "tanka-generator",
+  "version": "1.0.0",
+  "description": "A new tanka daily",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebastianromerocruz/Tanka-Generator.git"
+  },
+  "author": "Sebastian Romero Cruz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sebastianromerocruz/Tanka-Generator/issues"
+  },
+  "homepage": "https://github.com/sebastianromerocruz/Tanka-Generator#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
