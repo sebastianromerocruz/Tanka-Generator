@@ -4,7 +4,7 @@
 <head>
     <title>Tanka, Daily</title>
 
-    <!-- Overpass, Noto, and VT323 Fonts -->
+    <!-- Overpass, Noto Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Overpass:400,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
 
@@ -14,6 +14,10 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
@@ -26,11 +30,35 @@
             <!-- <img src="/docs/4.3/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt=""> -->
             Tanka, daily.
         </a>
+
+        <a class="nav-link" href="#"><i class="fas fa-question navbar-question" data-toggle="modal" data-target="#infoModal"></i></a>
     </nav>
 
-    <div class="middle tanka" id="tanka">
+    <!-- Info modal -->
+    <div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="infoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="infoModalLabel">Welcome to Tanka, Daily</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Tanka card -->
+    <div class="tanka" id="tanka">
         <div class="card tanka-card" style="width: 18rem;">
             <div class="card-body">
+                <div class="card-header text-right">
+                    March 15th, 2020
+                </div>
                 <div class="japanese-text">
                     <p class="card-text">In the quiet of midday</p>
                     <p class="card-text">The peony dreams</p>
@@ -39,42 +67,43 @@
                     <p class="card-text">In the sky.</p>
                 </div>
                 <div class="card-footer text-right">
-                    Akiko Yosano
+                    — Akiko Yosano
                 </div>
+                <hr class="tanka-hr">
                 <div class="accordion" id="accordionExample">
                     <div class="card poem-option">
                         <div class="card-header" id="headingThree">
                             <h2 class="mb-0">
-                                <button class="btn btn-link collapsed tanka-btn" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    <p class="option-button-text">日本語</p>
+                                <button class="btn btn-link collapsed tanka-btn japanese-font" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    日本語
                                 </button>
                             </h2>
                         </div>
                         <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                             <div class="card-body poem-option">
-                                <p class="card-text">裾たるる</p>
-                                <p class="card-text">紫ひくき</p>
-                                <p class="card-text">根なし雲</p>
-                                <p class="card-text">牡丹が夢の</p>
-                                <p class="card-text">真昼しづけき</p>
+                                <p class="card-text japanese-font">裾たるる</p>
+                                <p class="card-text japanese-font">紫ひくき</p>
+                                <p class="card-text japanese-font">根なし雲</p>
+                                <p class="card-text japanese-font">牡丹が夢の</p>
+                                <p class="card-text japanese-font">真昼しづけき</p>
                             </div>
                         </div>
                     </div>
                     <div class="card poem-option">
                         <div class="card-header" id="headingTwo">
                             <h2 class="mb-0">
-                                <button class="btn btn-link collapsed poem-option-button tanka-btn" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    <p class="option-button-text">仮名</p>
+                                <button class="btn btn-link collapsed poem-option-button tanka-btn japanese-font" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    仮名
                                 </button>
                             </h2>
                         </div>
                         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                            <div class="card-body tanka-option-card-body">
-                                <p class="card-text">そすたるる</p>
-                                <p class="card-text">むらさきひくき</p>
-                                <p class="card-text">ねなしぐも</p>
-                                <p class="card-text">ぼたんがゆめの</p>
-                                <p class="card-text">まひるしずけき</p>
+                            <div class="card-body poem-option">
+                                <p class="card-text japanese-font">そすたるる</p>
+                                <p class="card-text japanese-font">むらさきひくき</p>
+                                <p class="card-text japanese-font">ねなしぐも</p>
+                                <p class="card-text japanese-font">ぼたんがゆめの</p>
+                                <p class="card-text japanese-font">まひるしずけき</p>
                             </div>
                         </div>
                     </div>
